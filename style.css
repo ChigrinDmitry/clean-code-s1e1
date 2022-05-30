@@ -1,4 +1,4 @@
-/* Basic Style */
+/* Basic Style (default)*/
 body {
   background-color: #f8f8f8;
   color: #333;
@@ -12,14 +12,13 @@ body {
   text-align: right;
 }
 
-.eisenhower-matrix img {
+.eisenhower-matrix__image {
   width: 100%;
 }
 
-.eisenhower-matrix .more-inf {
+.eisenhower-matrix__more-inf {
   font-family: fantasy, cursive;
 }
-
 
 .main-page {
   display: block;
@@ -27,14 +26,28 @@ body {
   margin: 0 auto 0;
 }
 
-.task {
+.main-page__task {
   width: 56%;
   display: inline-block;
   flex-grow: 1;
 }
 
-.task-row-wrapper {
+.main-page__task-row-wrapper {
   display: flex;
+}
+
+.main-page__button {
+  background: none;
+  border: 0px;
+  color: #888;
+  font-size: 15px;
+  width: 60px;
+  font-family: Lato, sans-serif;
+  cursor: pointer;
+}
+
+.main-page__button:hover {
+  color: #3a3A3a;
 }
 
 ul {
@@ -50,19 +63,8 @@ input,button{
   outline: none;
 }
 
-button {
-  background: none;
-  border: 0px;
-  color: #888;
-  font-size: 15px;
-  width: 60px;
-  font-family: Lato, sans-serif;
-  cursor: pointer;
-}
 
-button:hover {
-  color: #3a3A3a;
-}
+
 
 /* Heading */
 h3,
@@ -133,13 +135,13 @@ li >    input[type="text"] {
   width: 226px;
 }
 
-button.delete img {
+.main-page__button_delete_image {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
 
-button.delete img:hover {
+.main-page__button_delete_image:hover {
   transform: rotateZ(0);
 }
 
@@ -154,12 +156,12 @@ ul li input[type=text] {
   display: none;
 }
 
-ul li.edit-mode input[type=text] {
+ul li.main-page__edit-mode input[type=text] {
   display: inline-block;
   width: 224px;
 }
 
-ul li.edit-mode label {
+ul li.main-page__edit-mode label {
     display: none;
 }
 
