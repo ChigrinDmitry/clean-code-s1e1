@@ -1,4 +1,3 @@
-alert('I kindly ask you to wait until thursday. Thank you very much!')
 //Document is the DOM can be accessed in the console with document.window.
 // Tree is from the top, html, body, p etc.
 
@@ -19,6 +18,7 @@ var completedTasksHolder=document.getElementById("completed-tasks");//completed-
 var createNewTaskElement=function(taskString){
 
     var listItem=document.createElement("li");
+    listItem.className="main-page__edit-mode main-page__list__item";
 
     //input (checkbox)
     var checkBox=document.createElement("input");//checkbx
@@ -42,10 +42,11 @@ var createNewTaskElement=function(taskString){
     editInput.className="main-page__task";
 
     editButton.innerText="Edit"; //innerText encodes special characters, HTML does not.
-    editButton.className="main-page__button_edit";
+    editButton.className="main-page__button main-page__button_edit";
 
-    deleteButton.className="main-page__button_delete";
+    deleteButton.className="main-page__button main-page__button_delete";
     deleteButtonImg.src='./remove.svg';
+    deleteButtonImg.className="main-page__button_delete_image";
     deleteButton.appendChild(deleteButtonImg);
 
 
@@ -157,8 +158,8 @@ var bindTaskEvents=function(taskListItem,checkBoxEventHandler){
     console.log("bind list item events");
 //select ListItems children
     var checkBox=taskListItem.querySelector("input[type=checkbox]");
-    var editButton=taskListItem.querySelector("button.main-page__button_edit");
-    var deleteButton=taskListItem.querySelector("button.main-page__button_delete");
+    var editButton=taskListItem.querySelector(".main-page__button_edit");
+    var deleteButton=taskListItem.querySelector(".main-page__button_delete");
 
 
     //Bind editTask to edit button.

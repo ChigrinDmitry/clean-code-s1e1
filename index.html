@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="style.css" media="screen" charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
-<body>
+<body class="body">
   <article class="eisenhower-matrix">
     <img class="eisenhower-matrix__image" src="./eisenhower-matrix.jpg" alt="Image of Eisenhower Matrix">
     <aside>
@@ -15,13 +15,14 @@
   
   <section class="main-page">
     <section id="adding-element">
-      <h3 class="main-page__heading main-page__heading_add-item">Add Item</h3>
+      <!-- <h3 class="main-page__heading main-page__heading_add-item">Add Item</h3> -->
+      <h3 class="main-page__heading title">Add Item</h3>
       <div class="main-page__task-row-wrapper">
         <input id="new-task" type="text" class="main-page__input main-page__task">
         <button class="main-page__button">Add</button>
       </div>
     </section>
-    <h3 class="main-page__heading">Todo</h3>
+    <h3 class="main-page__heading title">Todo</h3>
     <ul class="main-page__list" id="incomplete-tasks">
       <li class="main-page__list__item">
         <input type="checkbox" class="main-page__input">
@@ -42,7 +43,7 @@
         </button>
       </li>
     </ul>
-    <h3 class="main-page__heading">Completed</h3>
+    <h3 class="main-page__heading title">Completed</h3>
     <ul class="main-page__list" id="completed-tasks">
       <li class="main-page__list__item">
         <input type="checkbox" checked class="main-page__input">
