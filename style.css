@@ -56,7 +56,7 @@
   padding: 0px;
 }
 
-.main-page__list__item, 
+.main-page__list__item,
 .title {
   list-style: none;
 }
@@ -152,23 +152,21 @@
 }
 
 /* Edit Task */
-.main-page__list .main-page__input[type=text] {
+.main-page__list .main-page__input[type="text"] {
   display: none;
 }
 
-.main-page__edit-mode .main-page__input[type=text] {
+.main-page__edit-mode .main-page__input[type="text"] {
   display: inline-block;
   width: 224px;
 }
 
 .main-page__edit-mode label {
-    display: none;
+  display: none;
 }
 
-@media (max-width:768px) {
-  
-  .eisenhower-matrix { 
+@media (max-width: 768px) {
+  .eisenhower-matrix {
     text-align: center;
   }
-
 }
